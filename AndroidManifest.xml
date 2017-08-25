@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arkac.myapplication">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/doctor"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".databasediary" />
+        <activity android:name=".Patient_Reg" />
+        <activity android:name=".Patient_Home" />
+        <activity android:name=".Doctor_Home" />
+        <activity android:name=".Hospital_Home" />
+        <activity android:name=".Hospital_Reg" />
+        <activity android:name=".Doctor_Reg" />
+        <activity android:name=".ToAddPatient" />
+        <activity android:name=".Patient_Medical_Condition" />
+        <activity android:name=".search_by_name" />
+        <activity android:name=".search_by_date" />
+        <activity android:name=".Make_appointment" />
+        <activity android:name=".CheckAppointments" />
+        <activity android:name=".CardDemoActivity" />
+        <activity android:name=".RecyclerAdapter" />
+        <activity android:name=".Siren" />
+        <activity android:name=".MakeCall"></activity>
+    </application>
+
+</manifest>

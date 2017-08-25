@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#86D6A4"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.arkac.myapplication.Doctor_Home">
+
+    <Button
+        android:text="@string/H2"
+        android:onClick="search_name"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddPatient"
+        android:layout_alignStart="@+id/AddPatient"
+        android:layout_marginTop="28dp"
+        android:id="@+id/SearchByName" />
+
+    <Button
+        android:text="@string/H1"
+        android:onClick="addPatient"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:id="@+id/AddPatient"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/H3"
+        android:onClick="search_date"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/SearchByDate"
+        android:layout_below="@+id/SearchByName"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

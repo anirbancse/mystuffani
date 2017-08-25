@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="8px"
+    android:paddingLeft="8px"
+
+    tools:context="com.example.arkac.myapplication.Patient_Medical_Condition">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Medical_Input"
+        android:textStyle="italic"
+        android:paddingTop="30dp"
+        android:textSize="25sp"
+        android:id="@+id/textView16"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#090909" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt1"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView17"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="@string/txt2"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/txt3"
+        android:id="@+id/textView19"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:onClick="patient_condi"
+        android:textStyle="bold"
+        android:id="@+id/s1"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/e2"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/e1"
+        android:layout_above="@+id/e2"
+        android:layout_alignEnd="@+id/e2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/e3"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/e2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/Date"
+        android:id="@+id/textView23"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/e4"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/e3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Mail"
+        android:paddingLeft="10dp"
+        android:id="@+id/textView24"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e5"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignStart="@+id/e4"
+        android:layout_alignEnd="@+id/e4" />
+
+
+
+
+</RelativeLayout>
